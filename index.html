@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<h1>My Shopping List</h1>
+	</header>
+	<section class="add-item">
+		<label for="item">Item</label><br>
+		<input type="text" id="item"><br>
+		<label for="qty">qty</label><br>
+		<input type="text" id="qty"><br>
+		<label for="price">Price</label><br>
+		<input type="text" id="price" value="$">
+		<br>
+		<button id="add" type="button">Add</button>
+	</section>
+	<section class="I-need">
+		<fieldset class="f-I-need">
+			<legend>I Need</legend>
+			<table id="t-I-need">
+				<tr class="table-head">
+					<th>Items</th>
+					<th>Qty</th>
+					<th>Price</th>
+					<th></th>
+				</tr>
+			</table>
+			<p>Total: $</p>
+		</fieldset>
+	</section>
+	<section class="my-bag">
+		<fieldset class="f-my-bag">
+			<legend>My Bag</legend>
+			<table id="t-my-bag">
+				<tr class="table-head">
+					<th>Items</th>
+					<th>Qty</th>
+					<th>Price</th>
+					<th></th>
+				</tr>
+			</table>
+			<p>Total: $</p>
+		</fieldset>
+	</section>
+	<footer>
+		
+	</footer>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-size: 100%;
+	color: black;
+}
+header {
+	text-align: center;
+}
+section {
+	width: 25rem;
+	margin: auto;
+}
+.add-item {
+	font-size: 1.2rem;
+	text-align: left;
+}
+input {
+	height: 1.2rem;
+	min-width: 15rem;
+}
+button {
+	background-color: #34495E;
+	color: #dd5;
+	margin-top: 0.8rem;
+	margin-bottom: 1rem;
+	padding: 3px 5px;
+	border-radius: 10px;
+	position: relative;
+	top: 0.125rem;
+	width: 173px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+fieldset {
+	border-radius: .4rem;
+	min-height: 10rem;
+	position: relative;
+}
+fieldset > legend{
+	font-weight: bolder;
+}
+#t-I-need, #t-my-bag {
+  background: #34495E;
+  color: #fff;
+  border-radius: .4rem;
+  margin: 0;
+  min-width: 95%;
+ } 
+tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-color: lighten(#34495E, 10%);
+}
+th {
+   text-align: left;
+   margin: .5rem 1rem;
+   width:25%;
+   min-width:1rem;
+}
+.table-head {
+	color: #dd5;
+}
+p {
+	position: absolute;
+	width: 40%;
+	right: 0.1rem;
+	bottom: 0.1rem;
+	margin-bottom: 0.5rem;
+}
