@@ -18,6 +18,9 @@ input {
 	height: 1.2rem;
 	min-width: 15rem;
 }
+#price {
+	min-width: 14.2rem;
+}
 button {
 	background-color: #34495E;
 	color: #dd5;
@@ -37,8 +40,7 @@ button {
 
 fieldset {
 	border-radius: .4rem;
-	min-height: 10rem;
-	position: relative;
+	min-width: 10rem;
 }
 fieldset > legend{
 	font-weight: bolder;
@@ -47,8 +49,7 @@ fieldset > legend{
   background: #34495E;
   color: #fff;
   border-radius: .4rem;
-  margin: 0;
-  min-width: 95%;
+  min-width: 100%;
  } 
 tr {
   border-top: 1px solid #ddd;
@@ -65,9 +66,19 @@ th {
 	color: #dd5;
 }
 p {
-	position: absolute;
+	float: right;
 	width: 40%;
-	right: 0.1rem;
-	bottom: 0.1rem;
 	margin-bottom: 0.5rem;
+}
+.check {
+	margin: 4px 8px 0px 0px;
+}
+.cross {
+	margin: 2px 8px;
+}
+.cross:hover {
+	cursor: pointer;
+}
+.check:hover {
+	cursor: pointer;
 }
