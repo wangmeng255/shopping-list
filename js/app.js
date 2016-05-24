@@ -73,5 +73,5 @@ $(document).ready( function() {
 	   	my_bag_sum -= parseInt(price[1]);
 	   	$("#my-bag-total").text("Total: $ "+String(my_bag_sum));
 	   	tr.remove();
-	});;
+	});
 });
