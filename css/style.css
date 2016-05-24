@@ -50,7 +50,7 @@ fieldset {
 	height: 14rem;
 	overflow: auto;
 }
-}
+
 fieldset > legend{
 	font-weight: bolder;
 }
@@ -132,6 +132,9 @@ p {
 	}
 	#price {
 		width: 57%;
+	}
+	.d-I-need, .d-my-bag {
+		height: 11.5rem;
 	}
 	button {
 		width: 37%;
