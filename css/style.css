@@ -2,6 +2,7 @@ body {
 	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 	font-size: 100%;
 	color: black;
+	box-sizing: border-box;
 }
 header {
 	text-align: center;
@@ -16,11 +17,11 @@ section {
 }
 input {
 	height: 1.2rem;
-	min-width: 15rem;
+	width: 15rem;
 	font-size: 1.2rem;
 }
 #price {
-	min-width: 14.2rem;
+	width: 14.2rem;
 }
 button {
 	background-color: #34495E;
@@ -43,16 +44,24 @@ button {
 fieldset {
 	border-radius: .4rem;
 	min-width: 10rem;
+	height: 18rem;
+}
+.d-I-need, .d-my-bag {
+	height: 14rem;
+	overflow: auto;
+}
 }
 fieldset > legend{
 	font-weight: bolder;
 }
 #t-I-need, #t-my-bag {
-  background: #34495E;
-  color: #fff;
-  border-radius: .4rem;
+  background: #fff;
+  color: #34495E;
+  border-radius: 0.4rem;
   min-width: 100%;
+  border-collapse: collapse;
  } 
+
 tr {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -64,8 +73,19 @@ th {
    width:25%;
    min-width:1rem;
 }
-.table-head {
+thead {
 	color: #dd5;
+	background: #34495E;
+}
+
+tbody:hover {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
 }
 p {
 	float: right;
