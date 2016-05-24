@@ -8,20 +8,23 @@ header {
 	text-align: center;
 }
 section {
-	width: 25rem;
+	width: 45%;
 	margin: auto;
 }
 .add-item {
 	font-size: 120%;
 	text-align: left;
 }
+.input {
+	margin-left: 15%;
+}
 input {
 	height: 1.2rem;
-	width: 15rem;
+	width: 80%;
 	font-size: 1.2rem;
 }
 #price {
-	width: 14.2rem;
+	width: 76%;
 }
 button {
 	background-color: #34495E;
@@ -31,9 +34,9 @@ button {
 	padding: 3px 5px;
 	border-radius: 10px;
 	position: relative;
-	left: 5rem;
+	width: 37%;
+	left: 44.5%;
 	top: 0.125rem;
-	width: 10.3rem;
 	font-family: "Comic Sans MS", "Comic Sans", sans-serif;
 	text-align: center;
     text-decoration: none;
@@ -65,7 +68,7 @@ fieldset > legend{
 tr {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  border-color: lighten(#34495E, 10%);
+  /*border-color: lighten(#34495E, 10%);*/
 }
 th {
    text-align: left;
@@ -78,12 +81,12 @@ thead {
 	background: #34495E;
 }
 
-tbody:hover {
+tbody:hover th {
 	color: transparent;
 	text-shadow: 0 0 3px #aaa;
 }
 
-tbody:hover tr:hover {
+tbody:hover tr:hover th {
 	color: #444;
 	text-shadow: 0 1px 0 #fff;
 }
@@ -123,22 +126,29 @@ p {
 		font-size: 180%
 	}
     section {
-    	width: 55%;
+    	width: 52%;
     }
+    .input {
+		margin-left: 0;
+	}
     input {
     	height: 2.5rem;
-		width: 60%;
+		width: 90%;
 		font-size: 2.5rem;
 	}
 	#price {
-		width: 57%;
+		width: 85.5%;
+	}
+	fieldset {
+		height: 28rem;
 	}
 	.d-I-need, .d-my-bag {
-		height: 11.5rem;
+		height: 21.5rem;
 	}
 	button {
+		margin-top: 2rem;
 		width: 37%;
-		left: 25.5%;
+		left: 53.5%;
 	}
 	.check {
 		width: 2rem;
@@ -151,5 +161,42 @@ p {
 	.arrowup {
 		width: 1.95rem;
 		height: 1.95rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	header {
+		width: 48%;
+		position: absolute;
+		left: 49%;
+	}
+	.add-item {
+		position: absolute;
+		top: 20%;
+		left: 58%;
+	}
+	.input {
+		margin-left: 10%;
+	}
+	input {
+		width: 50%;
+	}
+	#price {
+		width: 48%;
+	}
+	button {
+		width: 30%;
+		left: 21.5%;
+	}
+	.I-need {
+		position: absolute;
+		left: 10%;
+		margin: 0;
+	}
+	 .my-bag {
+	 	position: absolute;
+		left: 10%;
+		top: 50%;
+		margin: 0;
 	}
 }
