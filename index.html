@@ -10,16 +10,16 @@
 		<h1>My Shopping List</h1>
 	</header>
 	<section class="add-item">
-		<div class="input">
+		<form class="input">
 		<label for="item">Item</label><br>
 		<input type="text" id="item"><br>
 		<label for="qty">qty</label><br>
 		<input type="number" step="1" min="0" max="100" id="qty"><br>
 		<label for="price">Price</label><br>
-		<label for="price">$</label><input type="text" id="price">
+		<label for="price"></label><input type="text" id="price" value="$">
 		<br>
-		<button id="add" type="button">Add</button>
-		</div>
+		<button id="add" type="submit">Add</button>
+		</form>
 	</section>
 	<section class="I-need">
 		<fieldset class="f-I-need">
@@ -59,9 +59,6 @@
 			<p id="my-bag-total">Total: $0</p>
 		</fieldset>
 	</section>
-	<footer>
-		
-	</footer>
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="./js/app.js"></script>
 </body>

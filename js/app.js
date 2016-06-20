@@ -1,13 +1,16 @@
 $(document).ready( function() {
 	var i_need_sum = 0;
 	var my_bag_sum = 0;
-	$("#add").click( function() {
+	$("form").submit( function(event) {
+		event.preventDefault();
 		//console.log("button click");
-		var item = [$("#item").val(), parseInt($("#qty").val()), parseFloat($("#price").val())];
+		var item = [$("#item").val(), parseInt($("#qty").val()), parseFloat($("#price").val().slice(1))];
 		if(item[0] && item[1] && item[2])
 		{
 			addTableRow($("#t-I-need"), item, $("#I-need-total"));
-			$("input").val("")
+			$("#item").val("");
+			$("#qty").val("");
+			$("#price").val("$");
 		}
 		else
 		{
